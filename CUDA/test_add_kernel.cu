@@ -125,6 +125,11 @@ int main()
 
     // CPU == GPU ?
     compare_arrays(gpu_result, cpu_result, size);
+
+    printf("Sum Array CPU execution time: %4.6f\n", (double)((double)(cpu_end - cpu_start) / CLOCKS_PER_SEC));
+    printf("Sum Array GPU execution time: %4.6f\n", (double)((double)(gpu_end - gpu_start) / CLOCKS_PER_SEC));
+    printf("Mem transfer from D -> H execution time: %4.6f\n", (double)((double)(mem_htod_end - mem_htod_start) / CLOCKS_PER_SEC));
+    printf("Mem transfer from H -> D execution time: %4.6f\n", (double)((double)(mem_dtoh_end - mem_dtoh_start) / CLOCKS_PER_SEC));
     
     // free device resources
     cudaFree(d_a);

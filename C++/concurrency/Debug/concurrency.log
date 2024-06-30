@@ -1,0 +1,3 @@
+﻿  NavigateBot.cpp
+C:\Users\moras\source\repos\concurrency\NavigateBot.cpp(41,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  concurrency.vcxproj -> C:\Users\moras\source\repos\concurrency\Debug\concurrency.exe
